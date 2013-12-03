@@ -1,12 +1,19 @@
 import tweepy
 import os
+import sys
 
 CONSUMER_KEY = os.environ.get('APP_CONSUMER_KEY',None)
 CONSUMER_SECRET = os.environ.get('APP_CONSUMER_SECRET', None)
 
 ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN', None)
-ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEM_SECRET', None)
+ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET', None)
 
+
+if CONSUMER_KEY==None or CONSUMER_SECRET==None \
+  or ACCESS_TOKEN==None or ACCESS_TOKEN_SECRET==None:
+    print 'You must set all the environment variales, see README.rst'
+    sys.exit()
+    
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 

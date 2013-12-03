@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = 'Check new Twitter SSL support'
+version = '0.1'
 
 setup(name='TwitterSSLCheck',
       version=version,

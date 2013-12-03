@@ -2,12 +2,12 @@ import tweepy
 import os
 import sys
 
-CONSUMER_KEY = os.environ.get('APP_CONSUMER_KEY',None)
-CONSUMER_SECRET = os.environ.get('APP_CONSUMER_SECRET', None)
+CONSUMER_KEY = os.environ.get('CONSUMER_KEY',None)
+CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET', None)
 
 ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN', None)
 ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET', None)
-
+import pdb;pdb.set_trace()
 
 if CONSUMER_KEY==None or CONSUMER_SECRET==None \
   or ACCESS_TOKEN==None or ACCESS_TOKEN_SECRET==None:

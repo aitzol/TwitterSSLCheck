@@ -21,7 +21,9 @@ setup(name='TwitterSSLCheck',
           # -*- Extra requirements: -*-
           'tweepy',
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
+      entry_points={
+        'console_scripts': [
+              'check_ssl = twittersslchek.test_ssl:main',
+        ]
+        },
       )

@@ -26,4 +26,4 @@ ACCESS_TOKEN_SECRET
 
 now run::
   
-  $ python test_ssl.py
+  $ check_ssl

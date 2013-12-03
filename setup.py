@@ -23,7 +23,7 @@ setup(name='TwitterSSLCheck',
       ],
       entry_points={
         'console_scripts': [
-              'check_ssl = twittersslchek.test_ssl:main',
+              'check_ssl = twittersslcheck.test_ssl:main',
         ]
         },
       )

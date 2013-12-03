@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+TwitterSSLCheck.egg-info/PKG-INFO
+TwitterSSLCheck.egg-info/SOURCES.txt
+TwitterSSLCheck.egg-info/dependency_links.txt
+TwitterSSLCheck.egg-info/entry_points.txt
+TwitterSSLCheck.egg-info/not-zip-safe
+TwitterSSLCheck.egg-info/top_level.txt
+twittersslcheck/__init__.py
